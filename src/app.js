@@ -7,7 +7,11 @@ import './app.css';
 class App extends React.Component {
   render() {
     return (
+      <>
+        <Increment />
         <Counter />
+        <Decrement />
+      </>
     );
   }
 }

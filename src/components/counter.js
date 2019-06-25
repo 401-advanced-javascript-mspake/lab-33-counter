@@ -3,15 +3,19 @@ import React from 'react';
 import { CountContext } from './counter-context';
 
 class Counter extends React.Component {
-static contextType = CountContext;
-
-render() {
-  return (
-    <>
-      <h4>{this.context.count}</h4>
-    </>
-  );
-}
+  render() {
+    return (
+    <CountContext.Consumer>
+      {
+        (context) => {
+          return (
+            <h4>{context.count}</h4>
+          );
+        }
+  }
+  </CountContext.Consumer>
+    );
+  }
 }
 
 export default Counter;
