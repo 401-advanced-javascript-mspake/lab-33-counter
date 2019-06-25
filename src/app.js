@@ -1,17 +1,15 @@
 import React from 'react';
+import Increment from './components/increment';
+import Counter from './components/counter';
+import Decrement from './components/decrement';
 import './app.css';
 
-function App() {
-  return (
-    <div className="app">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-        <p>I'm alive</p>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+        <Counter />
+    );
+  }
 }
 
 export default App;
