@@ -1,5 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app.js';
+import App from './app';
+import CountContextProvider from './components/counter-context';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+function Wrapper() {
+  return (
+  <CountContextProvider>
+        <App />
+   </CountContextProvider>
+  );
+}
+
+ReactDOM.render(<Wrapper />, document.getElementById('root'));
