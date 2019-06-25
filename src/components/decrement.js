@@ -7,7 +7,9 @@ class Increment extends React.Component {
 
   render() {
     return (
-      <a href="#" onClick={this.context.decrement}>-</a>
+      <button style={{
+        textAlign: 'center', margin: '10px auto', width: '100px', backgroundColor: 'red', 
+      }} onClick={this.context.decrement}>-</button>
     );
   }
 }

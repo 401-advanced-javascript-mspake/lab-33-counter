@@ -9,7 +9,7 @@ class Counter extends React.Component {
       {
         (context) => {
           return (
-            <h4>{context.count}</h4>
+            <h4 style={{ textAlign: 'center', fontSize: '4em' }}>{context.count}</h4>
           );
         }
   }
